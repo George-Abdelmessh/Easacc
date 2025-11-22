@@ -1,0 +1,60 @@
+name: easacc
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Style And Widgets
+  cupertino_icons: ^1.0.8
+
+  # Controllers And Helpers
+  go_router: ^17.0.0
+  connectivity_plus: ^7.0.0
+  equatable: ^2.0.7
+
+  # Local Storage
+  shared_preferences: ^2.5.3
+
+
+  # Persistence Packages
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/svgs/
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins-200.ttf
+        - asset: assets/fonts/poppins-300.ttf
+        - asset: assets/fonts/poppins-400.ttf
+        - asset: assets/fonts/poppins-500.ttf
+        - asset: assets/fonts/poppins-600.ttf
+        - asset: assets/fonts/poppins-700.ttf
+        - asset: assets/fonts/poppins-800.ttf
+        - asset: assets/fonts/poppins-900.ttf
+
+
