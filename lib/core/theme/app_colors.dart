@@ -43,31 +43,4 @@ class AppColor {
   /// LIGHT TEAL
   static const Color lightTeal = Color(0xff7FE2C3);
 
-  static Color shimmerBase = Colors.grey[200]!;
-
-  static Color shimmerHighlight = Colors.grey[300]!;
-
-  static ColorFilter blackAndWhiteColorFilter =
-      const ColorFilter.matrix(<double>[
-    0.2126,
-    0.7152,
-    0.0722,
-    0,
-    0,
-    0.2126,
-    0.7152,
-    0.0722,
-    0,
-    0,
-    0.2126,
-    0.7152,
-    0.0722,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-  ]);
 }
