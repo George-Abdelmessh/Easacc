@@ -11,6 +11,7 @@ class EssaccApp extends StatelessWidget {
       title: 'Essacc',
       theme: AppTheme.appLightTheme,
       routerConfig: router,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

@@ -48,13 +48,13 @@ flutter:
   fonts:
     - family: Poppins
       fonts:
-        - asset: assets/fonts/poppins-200.ttf
-        - asset: assets/fonts/poppins-300.ttf
-        - asset: assets/fonts/poppins-400.ttf
-        - asset: assets/fonts/poppins-500.ttf
-        - asset: assets/fonts/poppins-600.ttf
-        - asset: assets/fonts/poppins-700.ttf
-        - asset: assets/fonts/poppins-800.ttf
-        - asset: assets/fonts/poppins-900.ttf
+        - asset: assets/fonts/Poppins/poppins-200.ttf
+        - asset: assets/fonts/Poppins/poppins-300.ttf
+        - asset: assets/fonts/Poppins/poppins-400.ttf
+        - asset: assets/fonts/Poppins/poppins-500.ttf
+        - asset: assets/fonts/Poppins/poppins-600.ttf
+        - asset: assets/fonts/Poppins/poppins-700.ttf
+        - asset: assets/fonts/Poppins/poppins-800.ttf
+        - asset: assets/fonts/Poppins/poppins-900.ttf
 
 
