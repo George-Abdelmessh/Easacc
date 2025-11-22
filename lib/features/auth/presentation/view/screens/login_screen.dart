@@ -27,10 +27,6 @@ class LoginScreen extends StatelessWidget {
     });
   }
 
-  void _goToSettings(BuildContext context) {
-    context.push(AppRoutes.settings);
-  }
-
   void _navigateToHome(BuildContext context) {
     context.pushReplacement(AppRoutes.home);
   }
@@ -79,9 +75,9 @@ class LoginScreen extends StatelessWidget {
 
               /// Go to Settings Button
               GestureDetector(
-                onTap: () => _goToSettings(context),
+                onTap: () => _navigateToHome(context),
                 child: const Text(
-                  'Go to Settings',
+                  'Go to Home Screen',
                   style: TextStyle(
                     fontSize: 16,
                     color: AppColor.lightBlue,
