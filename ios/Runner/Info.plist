@@ -45,5 +45,48 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+
+	<key>CFBundleURLTypes</key>
+	<array>
+	<dict>
+		<key>CFBundleURLSchemes</key>
+		<array>
+		<!-- fb app id -->
+		<string>fb0000000000000000</string>
+		</array>
+	</dict>
+	</array>
+
+	<!-- Google Sign-In Configuration -->
+	<key>GIDClientID</key>
+	<string>310247947144-3l2kt1s8er33v9hsjvjnlsrbqetc6954.apps.googleusercontent.com</string>
+
+	<key>CFBundleURLTypes</key>
+	<array>
+	<dict>
+		<key>CFBundleTypeRole</key>
+		<string>Editor</string>
+		<key>CFBundleURLSchemes</key>
+		<array>
+		<string>com.googleusercontent.apps.310247947144-3l2kt1s8er33v9hsjvjnlsrbqetc6954</string>
+		</array>
+	</dict>
+	</array>
+
+
+
+	<key>FacebookAppID</key>
+	<string>123456789012345</string>
+	<key>FacebookDisplayName</key>
+	<string>YourAppName</string>
+
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+	<string>fbapi</string>
+	<string>fb-messenger-share-api</string>
+	<string>fbauth2</string>
+	<string>fbshareextension</string>
+	</array>
+
 </dict>
 </plist>

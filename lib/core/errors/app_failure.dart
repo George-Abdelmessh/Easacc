@@ -43,7 +43,7 @@ class NoInternetFailure extends AppFailure {
 }
 
 class UnexpectedFailure extends AppFailure {
-  const UnexpectedFailure() : super('failure.unexpected');
+  const UnexpectedFailure(super.message);
 }
 
 // Additional failure types for enhanced error handling
