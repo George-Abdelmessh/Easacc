@@ -16,6 +16,4 @@ class AppSize {
     final screenHeight = MediaQuery.of(context).size.height;
     return size * (screenHeight / _baseHeight);
   }
-
-  static double? fontSize(BuildContext context, int i) {}
 }
