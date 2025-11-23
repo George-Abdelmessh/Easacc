@@ -47,30 +47,34 @@ See `pubspec.yaml` for versions.
 
 ## 📱 App Flow
 
-The app currently starts at Home (bottom navigation with two tabs):
+The app starts at the Login screen and redirects to Home if already authenticated.
 
-1. **WebView Tab**
+1. **Login Screen** (initial route `/login`)
 
-   - Reads the stored URL (`SharedPrefsKeys.url`)
-   - Loads it inside a WebView
-   - If no URL is stored, shows an empty state with guidance
-
-2. **Settings Tab**
-
-   - Text field for Website URL (validated via `validators.dart`)
-   - Dropdown for Network Device (Wi‑Fi, Bluetooth)
-   - “Save” persists:
-     - `SharedPrefsKeys.url`
-     - `SharedPrefsKeys.selectedDevice`
-
-3. **Login Screen** (available at route `/login`)
    - Google and Facebook buttons
    - On success, navigates to Home
+   - If already logged in, automatic redirect to Home
+
+2. **Home** (bottom navigation with two tabs)
+
+   - **WebView Tab**
+
+     - Reads the stored URL (`SharedPrefsKeys.url`)
+     - Loads it inside a WebView
+     - If no URL is stored, shows an empty state with guidance
+
+   - **Settings Tab**
+
+     - Text field for Website URL (validated via `validators.dart`)
+     - Dropdown for Network Device (Wi‑Fi, Bluetooth)
+     - “Save” persists:
+       - `SharedPrefsKeys.url`
+       - `SharedPrefsKeys.selectedDevice`
 
 Routes are defined with `go_router` in `lib/core/router`:
 
 - `AppRoutes.login` → `/login`
-- `AppRoutes.home` → `/home` (current initial route)
+- `AppRoutes.home` → `/home`
 - `AppRoutes.settings` → `/settings`
 
 ---
@@ -178,7 +182,7 @@ Shared preferences keys live in:
 
 ## ✅ Status
 
-- Initial route is currently set to `/home` (see `core/router/router.dart`) with a TODO to switch to the login screen if desired.
+- Initial route is `/login` with a redirect to `/home` when `is_logged_in` is true (see `core/router/router.dart`).
 - WebView requires valid HTTPS URLs to load without ATS exceptions on iOS.
 
 ---
