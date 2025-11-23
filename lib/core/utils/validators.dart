@@ -110,4 +110,27 @@ extension AppValidators on String? {
     }
     return null;
   }
+
+    /// Validates a URL (http/https).
+  ///
+  /// Returns:
+  /// - "validation.required_url"
+  /// - "validation.invalid_url"
+  String? url() {
+    if (this == null || this!.isEmpty) {
+      return 'validation.required_url';
+    }
+
+    final value = this!.trim();
+    final uri = Uri.tryParse(value);
+
+    if (uri == null ||
+        !uri.hasScheme ||
+        !(uri.scheme == 'http' || uri.scheme == 'https') ||
+        uri.host.isEmpty) {
+      return 'validation.invalid_url';
+    }
+
+    return null;
+  }
 }
