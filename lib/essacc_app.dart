@@ -1,5 +1,5 @@
-import 'package:easacc/core/config/router/router.dart';
-import 'package:easacc/core/config/themes/app_theme.dart';
+import 'package:easacc/core/router/router.dart';
+import 'package:easacc/core/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class EssaccApp extends StatelessWidget {
@@ -11,6 +11,7 @@ class EssaccApp extends StatelessWidget {
       title: 'Essacc',
       theme: AppTheme.appLightTheme,
       routerConfig: router,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

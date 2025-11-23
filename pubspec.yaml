@@ -15,14 +15,24 @@ dependencies:
 
   # Style And Widgets
   cupertino_icons: ^1.0.8
+  flutter_svg: ^2.2.3
 
   # Controllers And Helpers
   go_router: ^17.0.0
   connectivity_plus: ^7.0.0
   equatable: ^2.0.7
+  dartz: ^0.10.1
+  flutter_facebook_auth: ^7.1.2
+  google_sign_in: ^7.2.0
+  webview_flutter: ^4.13.0
+  flutter_bloc: ^9.1.1
 
   # Local Storage
   shared_preferences: ^2.5.3
+
+  # Firebase
+  firebase_core: ^4.2.1
+  firebase_auth: ^6.1.2
 
 
   # Persistence Packages
@@ -48,13 +58,13 @@ flutter:
   fonts:
     - family: Poppins
       fonts:
-        - asset: assets/fonts/poppins-200.ttf
-        - asset: assets/fonts/poppins-300.ttf
-        - asset: assets/fonts/poppins-400.ttf
-        - asset: assets/fonts/poppins-500.ttf
-        - asset: assets/fonts/poppins-600.ttf
-        - asset: assets/fonts/poppins-700.ttf
-        - asset: assets/fonts/poppins-800.ttf
-        - asset: assets/fonts/poppins-900.ttf
+        - asset: assets/fonts/Poppins/poppins-200.ttf
+        - asset: assets/fonts/Poppins/poppins-300.ttf
+        - asset: assets/fonts/Poppins/poppins-400.ttf
+        - asset: assets/fonts/Poppins/poppins-500.ttf
+        - asset: assets/fonts/Poppins/poppins-600.ttf
+        - asset: assets/fonts/Poppins/poppins-700.ttf
+        - asset: assets/fonts/Poppins/poppins-800.ttf
+        - asset: assets/fonts/Poppins/poppins-900.ttf
 
 
