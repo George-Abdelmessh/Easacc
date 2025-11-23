@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'route_pages.dart';
 
 final GoRouter router = GoRouter(
-  initialLocation: AppRoutes.login,
+  // TODO: Change to login screen
+  initialLocation: AppRoutes.home,
   routes: appRoutes,
 );

@@ -74,6 +74,15 @@
 	</array>
 
 
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
+
+	<key>NSAppTransportSecurity</key>
+	<dict>
+	<key>NSAllowsArbitraryLoads</key>
+	<true/>
+	</dict>
+
 
 	<key>FacebookAppID</key>
 	<string>123456789012345</string>

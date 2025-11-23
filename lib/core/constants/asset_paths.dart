@@ -8,4 +8,5 @@ class AppAssets {
    static const String facebook = '$svg/facebook.svg';
 
   /// Images
+  static const String noUrl = '$image/empty_box.png';
 }
