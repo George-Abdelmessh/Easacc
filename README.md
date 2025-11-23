@@ -152,13 +152,6 @@ lib/
     settings/             # Settings screen + cubit
 ```
 
-Shared preferences keys live in:
-
-- `SharedPrefsKeys.userID`
-- `SharedPrefsKeys.isLoggedIn`
-- `SharedPrefsKeys.url`
-- `SharedPrefsKeys.selectedDevice`
-
 ---
 
 ## 🔐 Notes on Auth
@@ -166,17 +159,6 @@ Shared preferences keys live in:
 - Auth is performed via `firebase_auth` with providers:
   - Google (`google_sign_in`)
   - Facebook (`flutter_facebook_auth`)
-- Successful sign‑ins store `user_id` and `is_logged_in` via `SharedPreferencesService`.
-
----
-
-## 🧪 URL Validation
-
-`lib/core/utils/validators.dart` includes `String?.url()` which ensures:
-
-- Non‑empty input
-- Valid `http` or `https` scheme
-- Non‑empty host
 
 ---
 
@@ -185,8 +167,4 @@ Shared preferences keys live in:
 - Initial route is `/login` with a redirect to `/home` when `is_logged_in` is true (see `core/router/router.dart`).
 - WebView requires valid HTTPS URLs to load without ATS exceptions on iOS.
 
----
 
-## 📜 License
-
-MIT or your preferred license.
